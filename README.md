@@ -1,3 +1,4 @@
+
 # 🚀 Ajith Pal — Founder-Level Portfolio
 
 > Building scalable SaaS products with modern web technologies, real-time systems, and product-first engineering.
@@ -6,18 +7,17 @@
 
 ## 🌐 Live Portfolio
 
-🔗 [Portfolio Link]
+🔗 [https://ajith-pal-portfolio.vercel.app](https://ajith-pal-portfolio.vercel.app)
 
 ---
 
 ## 📌 About This Portfolio
 
 This portfolio is designed to showcase:
-
 * Production-level full-stack engineering skills
-* SaaS product thinking
-* System design and architecture knowledge
-* Real-world project execution
+* SaaS product thinking and complex state management
+* System design, background queues, and microservice-oriented architecture
+* Real-world project execution with enterprise-grade observability
 
 It is not just a portfolio, but a **product-oriented engineering showcase**.
 
@@ -25,152 +25,93 @@ It is not just a portfolio, but a **product-oriented engineering showcase**.
 
 ## 🧠 What You’ll Find Here
 
-* 🚀 Featured Projects (Case Study Style)
-* 🏗️ System Architecture & Design Thinking
-* ⚡ Real-time Systems & API Integrations
-* 💻 Clean UI/UX with modern frontend stack
-* 📊 Scalable backend structure
+* 🚀 In-Depth Case Study: Building a Real-Time Collaborative Canvas
+* 🏗️ System Architecture & Database Design Thinking
+* ⚡ WebSocket Integrations & Conflict-Free Replicated Data Types (CRDTs)
+* 💻 Clean UI/UX with modern frontend tooling
+* 📊 Scalable, secure backend structuring with custom RBAC
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### Frontend Architecture
+* **Framework:** Next.js (App Router) & React
+* **Styling & UI:** Tailwind CSS, ShadCN UI
+* **Interactive Canvas:** Tldraw
+* **State & Real-Time:** Liveblocks (Yjs)
 
-* Next.js
-* React
-* Tailwind CSS
-* ShadCN UI
+### Backend & Infrastructure
+* **Server Framework:** Fastify (Node.js)
+* **Real-time Engine:** WebSockets
+* **Background Jobs:** BullMQ 
+* **File Storage:** Uploadthing
 
-### Backend
+### Database & Security
+* **Database:** PostgreSQL (Neon Serverless)
+* **ORM:** Prisma
+* **Auth & Security:** Custom Session Auth, Role-Based Access Control (RBAC)
 
-* Node.js / NestJS / Fastify
-* REST APIs
-* WebSockets
-
-### Database
-
-* PostgreSQL
-* Prisma ORM
-
-### DevOps & Tools
-
-* Docker
-* GitHub
-* CI/CD (if applicable)
+### DevOps & Observability
+* **Hosting:** Docker, Vercel (Frontend), Render (Backend)
+* **Telemetry & Logging:** Grafana Loki, OpenTelemetry (Tempo)
+* **Version Control:** Git & GitHub
 
 ---
 
-## 📂 Project Highlights
+## 📂 Featured Project
 
-### 🔥 TaskFlow — Scalable SaaS Productivity Platform
+### 🔥 TaskFlow — Scalable SaaS Productivity & Canvas Platform
 
-> [Short 1-line description]
+> A real-time collaborative workspace bridging the gap between structured task management and free-form visual brainstorming.
 
-**Key Features:**
+**Key Engineering Achievements:**
+* **Real-Time Multiplayer:** Engineered a low-latency collaborative whiteboard using Tldraw and Liveblocks, syncing cursors and drawing states across multiple clients seamlessly.
+* **Custom RBAC Security:** Implemented a strict Role-Based Access Control system via Fastify middleware to manage permissions across Workspaces and Projects (Owner, Admin, Member, Viewer).
+* **Asynchronous Processing:** Built robust background job queues using BullMQ to handle intensive tasks like canvas syncing and Liveblocks server cleanup without blocking the main API thread.
+* **Enterprise Observability:** Integrated OpenTelemetry and Grafana Loki for centralized logging and trace monitoring across the distributed architecture.
+* **Figma-Style Dashboard:** Designed a responsive, grid-based dashboard with automated canvas thumbnail generation and Uploadthing image hosting.
 
-* Real-time collaboration (WebSockets)
-* Modular architecture (microservices-ready)
-* Authentication & workspace system
-* Third-party integrations
-
-**Tech Used:**
-
-* Next.js + Backend Framework
-* PostgreSQL + Prisma
-* [Other tools]
-
-🔗 Live: [TaskFlow Live Link]
-🔗 Code: [TaskFlow GitHub Repo]
-
----
-
-### 📌 [Project Name 2]
-
-> [Description]
-
-* Feature 1
-* Feature 2
-* Feature 3
-
-🔗 Live: [Link]
-🔗 Code: [Repo]
-
----
-
-### 📌 [Project Name 3]
-
-> [Description]
-
-* Feature 1
-* Feature 2
-* Feature 3
-
-🔗 Live: [Link]
-🔗 Code: [Repo]
+🔗 **Live Deployment:** [https://task-flow-web-seven.vercel.app](https://task-flow-web-seven.vercel.app)
+🔗 **Source Code:** [TaskFlow GitHub Repo]
 
 ---
 
 ## 🏗️ Architecture & System Design
 
-This portfolio includes a dedicated section explaining:
+This portfolio highlights a deep focus on backend robustness and system design:
 
-* Microservices architecture approach
-* API design patterns
-* Real-time system implementation
-* Database design strategy
-* Scaling considerations
+* **Decoupled Architecture:** Clean separation of concerns between the Next.js frontend delivery and the Fastify API backend.
+* **API Design Patterns:** Strict schema validation and RESTful routing.
+* **Real-time System Implementation:** CRDTs for resolving real-time editing conflicts on the whiteboard.
+* **Scaling Considerations:** Utilizing serverless Postgres (Neon) and externalized message queues (BullMQ) to prepare for high-concurrency traffic.
 
-📌 [Architecture Page Link]
+📌 https://github.com/Ajithpal2007/TaskFlow/tree/main/docs 
+
+**High-level architecture showing separation between the edge frontend and the monitored backend infrastructure.**
+
+![Complete Architecture Diagram](./src/assets/Complete%20Architecture.svg)
 
 ---
 
 ## 🎯 Vision
 
 I aim to build:
-
 * Scalable SaaS platforms
 * Developer tools
 * Real-time collaborative systems
 
-Long-term goal:
-
-> Build products that solve real-world problems at scale.
+**Long-term goal:**
+> Build products that solve real-world problems at scale, prioritizing technical excellence and user experience.
 
 ---
 
 ## 📸 Screenshots
 
-*Add your product screenshots here*
-
 ```md
-![Dashboard](./public/images/dashboard.png)
-![Task Board](./public/images/tasks.png)
-![Architecture](./public/images/architecture.png)
-```
-
----
-
-## 🎥 Demo Video
-
-*Add your demo video link*
-
-```md
-[Watch Demo](Demo Video Link)
-```
-
----
-
-## 📁 Project Structure
-
-```bash
-.
-├── app/
-├── components/
-├── lib/
-├── public/
-├── styles/
-└── ...
+![TaskFlow Task Dashboard](./src/assets/taskboard.png)
+![Real-Time Chat](./src/assets/chat.png)
+![System Architecture Diagram](./src/assets/taskflow-architecture.jpg)
 ```
 
 ---
@@ -178,61 +119,34 @@ Long-term goal:
 ## ⚙️ Installation & Setup
 
 ```bash
-# Clone the repo
-git clone https://github.com/[your-username]/[repo-name].git
+# Clone the repository
+git clone https://github.com/Ajithpal2007/Ajith-Pal-portfolio.git
 
 # Navigate to project
-cd [repo-name]
+cd Ajith-Pal-portfolio
 
 # Install dependencies
-pnpm install
-# or
-npm install
+bun install
 
-# Run development server
-pnpm dev
-# or
-npm run dev
+# Run the Next.js frontend
+bun run dev
+
 ```
 
----
-
-## 🔐 Environment Variables
-
-Create a `.env` file and add:
-
-```env
-DATABASE_URL=
-NEXT_PUBLIC_API_URL=
-AUTH_SECRET=
-[OTHER_KEYS]
-```
 
 ---
 
 ## 📬 Contact
 
-* Email: [Your Email]
-* LinkedIn: [LinkedIn Link]
-* GitHub: [GitHub Link]
-* Portfolio: [Portfolio Link]
-
----
-
-## ⭐ Contributing
-
-Currently not open for contributions, but feel free to fork and explore.
-
----
-
-## 📄 License
-
-[MIT License] (or specify your license)
+* **Email:** ajithpal343@gmail.com
+* **LinkedIn:** https://www.linkedin.com/in/ajith-pal-ab6525350
+* **GitHub:** https://github.com/Ajithpal2007
+* **Portfolio:** [https://ajith-pal-portfolio.vercel.app](https://ajith-pal-portfolio.vercel.app)
 
 ---
 
 ## 💡 Final Note
 
-This portfolio represents my journey toward becoming a **product-focused, system-oriented engineer**.
+This portfolio represents my journey toward becoming a **product-focused, system-oriented engineer**. 
 
-If you’re building something interesting or hiring, let’s connect.
+If you are building something interesting or looking for an engineer who understands both the UI layer and the backend infrastructure required to support it—let’s connect.
