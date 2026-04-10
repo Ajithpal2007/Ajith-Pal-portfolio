@@ -72,6 +72,12 @@ It is not just a portfolio, but a **product-oriented engineering showcase**.
 * **Enterprise Observability:** Integrated OpenTelemetry and Grafana Loki for centralized logging and trace monitoring across the distributed architecture.
 * **Figma-Style Dashboard:** Designed a responsive, grid-based dashboard with automated canvas thumbnail generation and Uploadthing image hosting.
 
+Demo Video of TaskFlow
+
+<p align="center">
+  <video src="https://ba16nmh63n.ufs.sh/f/eMd9rUYt0HxnWwCcjKglqDuN6hvVxekJFXoBaZKQUlm8Ls3c" autoplay loop muted playsinline width="100%"></video>
+</p>
+
 🔗 **Live Deployment:** [https://task-flow-web-seven.vercel.app](https://task-flow-web-seven.vercel.app)
 🔗 **Source Code:** [TaskFlow GitHub Repo]
 
