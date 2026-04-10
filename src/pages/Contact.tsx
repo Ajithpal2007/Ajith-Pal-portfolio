@@ -26,7 +26,7 @@ const links = [
     label: "Resume", 
     value: "Download PDF", 
     // Paste your Uploadthing file URL here
-    href: "https://utfs.io" 
+    href: "https://ba16nmh63n.ufs.sh/f/eMd9rUYt0HxnWRot8GlqDuN6hvVxekJFXoBaZKQUlm8Ls3cO" 
   }
 ];
 
